@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --back-purple : #1B1937;
+    --span-purple : #AB5CDB;
+    --black : #000000;
+    --white : #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 80%;
+    background-color: var(--back-purple);
+    border-radius: 16px;
+    display: flex;
+}
+
+.main-part {
+    width: 50%;
+}
+
+.part-left {
+    padding: 80px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+span {
+    color: var(--span-purple);
+}
+
+.description {
+    color: rgb(161, 161, 161);
+    font-size: 20px;
+    margin-bottom: 72px;
+    width: 90%;
+}
+
+.stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-card h2{
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+
+.stats-card p {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+}
+
+.part-right img {
+    width: 100%;
+    border-radius: 0px 16px 16px 0px;
+}
+
+.part-right img::before {
+    background-color: var(--span-purple);
+}
